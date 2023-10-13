@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "ISOfolder Tool 2.1 - ISO creation tool from folder"
 read -p "Press Enter key to continue. " CONTINUE
