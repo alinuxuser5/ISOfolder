@@ -45,6 +45,8 @@ Run the installation script:
 ```
 ./install.sh
 ```
+> Note: The directory is located on /usr/share/isofolder.
+
 It will ask you to enter your root password.
 ## Final result
 Once the installation is done, you can open it on desktop or Application Menu.
