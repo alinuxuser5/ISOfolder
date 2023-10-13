@@ -16,6 +16,10 @@ cp isofolder-files/org.alinuxproject5.isofolder.desktop /usr/share/applications
 touch /usr/share/isofolder/installation.txt
 echo "Installed as ${whoami}." | tee /usr/share/isofolder/installation.txt
 read -p "What's your username? " USERNAME_INSTALLATION
+cd /usr/share/isofolder
+wget https://github.com/alinuxuser5/ISOfolder/archive/refs/heads/main.zip
+cd /home/"$USERNAME_INSTALLATION"
+touch /usr/share/isofolder/EMPTY
 cp isofolder-files/org.alinuxproject5.isofolder.desktop /home/"$USERNAME_INSTALLATION"/Desktop
 cp isofolder-files/org.alinuxproject5.isofolder.desktop /usr/share/isofolder/spot/desktop.spot
 touch /usr/share/isofolder/spot/official.spot
