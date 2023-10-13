@@ -13,3 +13,20 @@ read -p "Enter the file extension (e.g., iso, img, img.xz): " IMAGE_FILE_EXTENSI
 read -p "Enter the name of your image file: " IMAGE_NAME
 genisoimage -o "$IMAGE_NAME"."$IMAGE_FILE_EXTENSION" -r "$IMAGE_FOLDER"
 echo "Your image file $IMAGE_NAME.$IMAGE_FILE_EXTENSION is sucessfully created."
+sleep 5
+clear
+echo "Closing in 5 seconds..."
+sleep 1
+clear
+echo "Closing in 4 seconds..."
+sleep 1
+clear
+echo "Closing in 3 seconds..."
+sleep 1
+clear
+echo "Closing in 2 seconds..."
+sleep 1
+clear
+echo "Closing in 1 second..."
+sleep 1
+exit
