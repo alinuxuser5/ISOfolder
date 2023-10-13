@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ISOfolder
+Comment=ISO creation tool from folder
+Exec=/usr/share/isofolder/script.sh
+Icon=application-x-iso
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
