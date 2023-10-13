@@ -9,10 +9,9 @@ echo "Started."
 sleep 0.1
 clear
 read -p "Enter the folder location: " IMAGE_FOLDER
-read -p "Enter the file extension (e.g., iso, img, img.xz): " IMAGE_FILE_EXTENSION
 read -p "Enter the name of your image file: " IMAGE_NAME
-genisoimage -o "$IMAGE_NAME"."$IMAGE_FILE_EXTENSION" -r "$IMAGE_FOLDER" -i
-echo "Your image file $IMAGE_NAME.$IMAGE_FILE_EXTENSION is sucessfully created."
+genisoimage -o "$IMAGE_NAME" -r "$IMAGE_FOLDER" --input-charset
+echo "Your image file $IMAGE_NAME.iso is sucessfully created."
 sleep 5
 clear
 echo "Closing in 5 seconds..."
