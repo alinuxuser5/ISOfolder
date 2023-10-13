@@ -11,7 +11,7 @@ clear
 read -p "Enter the folder location: " IMAGE_FOLDER
 read -p "Enter the file extension (e.g., iso, img, img.xz): " IMAGE_FILE_EXTENSION
 read -p "Enter the name of your image file: " IMAGE_NAME
-genisoimage -o "$IMAGE_NAME"."$IMAGE_FILE_EXTENSION" -r "$IMAGE_FOLDER"
+genisoimage -o "$IMAGE_NAME"."$IMAGE_FILE_EXTENSION" "$IMAGE_FOLDER"
 echo "Your image file $IMAGE_NAME.$IMAGE_FILE_EXTENSION is sucessfully created."
 sleep 5
 clear
