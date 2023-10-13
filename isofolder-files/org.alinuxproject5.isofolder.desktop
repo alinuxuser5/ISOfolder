@@ -6,5 +6,3 @@ Icon=application-x-iso
 Terminal=true
 Type=Application
 Categories=Development;
-StartupNotify=true
-NoDisplay=true
