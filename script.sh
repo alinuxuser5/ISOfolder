@@ -10,7 +10,7 @@ sleep 0.1
 clear
 read -p "Enter the folder location: " IMAGE_FOLDER
 read -p "Enter the name of your image file: " IMAGE_NAME
-genisoimage -o "$IMAGE_NAME" -r "$IMAGE_FOLDER" --input-charset
+genisoimage -o "$IMAGE_NAME" "$IMAGE_FOLDER"
 echo "Your image file $IMAGE_NAME.iso is sucessfully created."
 sleep 5
 clear
