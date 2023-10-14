@@ -7,6 +7,8 @@ sudo mkdir /usr/share/isofolder/log
 sudo mkdir /usr/share/isofolder/images
 sudo mkdir /usr/share/isofolder/files
 sudo mkdir /usr/share/isofolder/`uname -m`
+sudo mkdir /usr/share/isofolder/`uname -m`/data
+sudo mkdir /usr/share/isofolder/`uname -m`/data/ST
 echo "Making files..."
 sudo touch /usr/share/isofolder/log/inst1-log.log
 echo "inst=inst1" | sudo tee /usr/share/isofolder/log/inst1-log.log
@@ -23,12 +25,8 @@ sudo touch /usr/share/isofolder/installation.txt
 echo "Install" | sudo tee /usr/share/isofolder/installation.txt
 echo "Installing resources..."
 sudo wget https://github.com/alinuxuser5/ISOfolder/archive/refs/heads/main.zip -P /usr/share/isofolder
-sudo wget http://ipv4.download.thinkbroadband.com:8080/20MB.zip -p /usr/share/isofolder/files
-sudo wget http://ipv4.download.thinkbroadband.com:8080/10MB.zip -p /usr/share/isofolder/files
-sudo cp /usr/share/isofolder/files/20MB.zip /usr/share/isofolder/files/data1.isofolder
-sudo cp /usr/share/isofolder/files/10MB.zip /usr/share/isofolder/files/data2.isofolder
-sudo rm /usr/share/isofolder/files/20MB.zip
-sudo rm /usr/share/isofolder/files/10MB.zip
+sudo cp isofolder-files/data1.st /usr/share/isofolder/`uname -m`/data/ST
+sudo cp isofolder-files/data2.st /usr/share/isofolder/`uname -m`/data/ST
 sudo touch /usr/share/isofolder/EMPTY
 sudo cp isofolder-files/org.alinuxproject5.isofolder.desktop /home/`whoami`/Desktop
 sudo cp isofolder-files/org.alinuxproject5.isofolder.desktop /usr/share/isofolder/spot/desktop.spot
