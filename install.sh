@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Version
+VERSION=2.2
+
 echo "Making directories..."
 sudo mkdir /usr/share/isofolder
 sudo mkdir /usr/share/isofolder/spot
@@ -9,6 +12,7 @@ sudo mkdir /usr/share/isofolder/files
 sudo mkdir /usr/share/isofolder/`uname -m`
 sudo mkdir /usr/share/isofolder/`uname -m`/data
 sudo mkdir /usr/share/isofolder/`uname -m`/data/ST
+sudo mkdir /usr/share/isofolder/"$VERSION"
 echo "Making files..."
 sudo touch /usr/share/isofolder/log/inst1-log.log
 echo "inst=inst1" | sudo tee /usr/share/isofolder/log/inst1-log.log
