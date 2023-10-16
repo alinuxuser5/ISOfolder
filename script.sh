@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo "ISOfolder Tool 2.2 `uname -m` - ISO creation tool from folder"
+# Version
+VERSION=2.2
+
+echo "ISOfolder Tool "$VERSION" `uname -m` - ISO creation tool from folder"
 read -p "Press Enter key to continue. " CONTINUE
 sleep 1
 echo "Starting..."
