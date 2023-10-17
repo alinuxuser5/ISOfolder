@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Generate a random 3-digit number
+random_number=$((RANDOM % 1000))
+
 # Config directory
 isofolder_path="~/.isofolder"
 
@@ -28,6 +31,11 @@ clear
 read -p "Enter the folder location: " IMAGE_FOLDER
 read -p "Enter the name of your image file: " IMAGE_NAME
 genisoimage -o "$IMAGE_NAME" "$IMAGE_FOLDER"
+touch ~/.isofolder/logs/log-"$IMAGE_NAME".txt
+echo "Image name: $IMAGE_NAME
+Image directory: $IMAGE_FOLDER
+Saved log in the number $random_number." | tee ~/.isofolder/logs/log-"$IMAGE_NAME".txt
+clear
 echo "Your image file $IMAGE_NAME.iso is sucessfully created."
 sleep 5
 clear
