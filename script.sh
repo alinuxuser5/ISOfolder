@@ -1,8 +1,5 @@
 #!/bin/bash
 
-RED='\033[0;31m' # Red color
-NC='\033[0m' # No color
-
 # Config directory
 isofolder_path="~/.isofolder"
 
@@ -11,7 +8,7 @@ if [ -d "$isofolder_path" ]; then
   sleep 1
   clear
 else
-  echo "${RED}E:${NC} Configuration directory does not exist. Exiting.."
+  echo "E: Configuration directory ($isofolder_path) does not exist. Exiting.."
   sleep 1
   exit 1
 fi
