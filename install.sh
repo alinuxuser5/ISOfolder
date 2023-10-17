@@ -13,7 +13,9 @@ sudo mkdir /usr/share/isofolder/`uname -m`
 sudo mkdir /usr/share/isofolder/`uname -m`/data
 sudo mkdir /usr/share/isofolder/`uname -m`/data/ST
 sudo mkdir /usr/share/isofolder/"$VERSION"
-sudo mkdir ~/.isofolder
+mkdir ~/.isofolder
+mkdir ~/.isofolder/logs
+mkdir ~/.isofolder/config
 echo "Making files..."
 sudo touch /usr/share/isofolder/log/inst1-log.log
 echo "inst=inst1" | sudo tee /usr/share/isofolder/log/inst1-log.log
