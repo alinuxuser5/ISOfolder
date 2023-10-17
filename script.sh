@@ -9,6 +9,7 @@ isofolder_path="~/.isofolder"
 if [ -d "$isofolder_path" ]; then
   echo "Found configuration directory. Starting..."
   sleep 1
+  clear
 else
   echo "${RED}E:${NC} Configuration directory does not exist. Exiting.."
   sleep 1
