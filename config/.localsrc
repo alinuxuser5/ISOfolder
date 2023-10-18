@@ -1,0 +1,7 @@
+[SourceConf]
+Source=https://github.com/alinuxuser5/ISOfolder
+Script=/usr/share/isofolder/script.sh
+ScriptSrc=/script.sh
+
+ConfDir=~/.isofolder
+

@@ -1,0 +1,3 @@
+org.isofolderconf.dir.ScriptConf.ConfEnabled = TRUE
+org.isofolderconf.config.log.LogSave = TRUE
+org.isofolderconf.config.log.TestingLab = FALSE
