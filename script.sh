@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Generate a random 3-digit number
 random_number=$((RANDOM % 1000))
 
@@ -16,6 +17,16 @@ else
   exit 1
 fi
 
+localrc_path="$HOME/.isofolder/config/.localrc"
+
+if [ -e "$localrc_path" ]; then
+  clear
+  sleep 1
+else
+  echo "E: The file ~/.isofolder/config/.localrc does not exist."
+  sleep 0.9
+  exit 1
+fi
 
 # Version
 VERSION=2.2
@@ -37,20 +48,11 @@ Image directory: $IMAGE_FOLDER
 Saved log in the number $random_number." | tee ~/.isofolder/logs/log-"$IMAGE_NAME".txt
 clear
 echo "Your image file $IMAGE_NAME.iso is sucessfully created."
-sleep 5
+sleep 10
+
 clear
-echo "Closing in 5 seconds..."
 sleep 1
-clear
-echo "Closing in 4 seconds..."
-sleep 1
-clear
-echo "Closing in 3 seconds..."
-sleep 1
-clear
-echo "Closing in 2 seconds..."
-sleep 1
-clear
+exit 1
 echo "Closing in 1 second..."
 sleep 1
 exit
