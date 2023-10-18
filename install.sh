@@ -18,9 +18,12 @@ mkdir ~/.isofolder/logs
 mkdir ~/.isofolder/config
 echo "Making files..."
 sudo touch /usr/share/isofolder/log/inst1-log.log
+sudo find /var
+sudo find /usr/share
 echo "inst=inst1" | sudo tee /usr/share/isofolder/log/inst1-log.log
 sudo cp isofolder-files/ /usr/share/isofolder -r
 sudo cp /usr/share/images/vendor-logos/logo.svg /usr/share/isofolder/images/logo-`uname -n`-`uname -m`.svg
+sudo cp config/ ~/.isofolder
 sudo chmod +x script.sh
 sudo chmod u+x script.sh
 sudo chmod 766 script.sh
