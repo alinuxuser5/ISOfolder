@@ -41,7 +41,7 @@ sleep 0.1
 clear
 read -p "Enter the folder location: " IMAGE_FOLDER
 read -p "Enter the name of your image file: " IMAGE_NAME
-genisoimage -o "$IMAGE_NAME" "$IMAGE_FOLDER"
+/usr/bin/mkisofs -o "$IMAGE_NAME" -r "$IMAGE_FOLDER"
 touch ~/.isofolder/logs/log-"$IMAGE_NAME".txt
 echo "Image name: $IMAGE_NAME
 Image directory: $IMAGE_FOLDER
