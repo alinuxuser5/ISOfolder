@@ -13,6 +13,7 @@ if [ $? -eq 0 ]; then
   sleep 2.1
 else
   echo "Operation canceled."
+  exit 1
 fi
 
 echo "Making directories..."
