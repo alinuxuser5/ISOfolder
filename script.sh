@@ -29,7 +29,7 @@ else
 fi
 
 # Version
-VERSION=2.4
+VERSION=2.5
 
 echo "ISOfolder Tool "$VERSION" `uname -m` - ISO creation tool from folder"
 read -p "Press Enter key to continue. " CONTINUE
