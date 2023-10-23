@@ -47,7 +47,7 @@ echo "Image name: $IMAGE_NAME
 Image directory: $IMAGE_FOLDER
 Saved log in the number $random_number." | tee ~/.isofolder/logs/log-"$IMAGE_NAME".txt
 clear
-echo "Your image file $IMAGE_NAME.iso is sucessfully created."
+echo "Your image file $IMAGE_NAME.iso is sucessfully created. The result is in `pwd`/$IMAGE_NAME.iso."
 sleep 10
 
 clear
