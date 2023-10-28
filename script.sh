@@ -13,7 +13,6 @@ if [ -d "$isofolder_path" ]; then
   clear
 else
   echo "E: Configuration directory ($isofolder_path) does not exist. Exiting.."
-  sleep 1
   exit 1
 fi
 
@@ -29,7 +28,7 @@ else
 fi
 
 # Version
-VERSION=2.5
+VERSION=2.6
 
 echo "ISOfolder Tool "$VERSION" `uname -m` - ISO creation tool from folder"
 read -p "Press Enter key to continue. " CONTINUE
