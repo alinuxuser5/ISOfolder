@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Version
-VERSION=2.5
+VERSION=2.6
 
 # Display the dialog box and capture the user's choice
 dialog --backtitle "ISOfolder Setup" --title "ISOfolder" --yesno "Do you want to continue?" 10 50
@@ -79,7 +79,6 @@ case $choice in
     sudo cp isofolder-files/org.alinuxproject5.isofolder.desktop /usr/share/isofolder/spot/desktop.spot
     sudo touch /usr/share/isofolder/spot/official.spot
     echo "spot=desktop.spot,script.sh.spot" | sudo tee /usr/share/isofolder/spot/official.spot
-    ;;
   2)
     echo "Installing minimal software..."
     echo "Making files... (minimal)"
@@ -95,11 +94,9 @@ case $choice in
     sudo cp isofolder-files/data1.st /usr/share/isofolder/`uname -m`/data/ST
     sudo cp isofolder-files/data2.st /usr/share/isofolder/`uname -m`/data/ST
     sudo cp isofolder-files/org.alinuxproject5.isofolder.desktop /home/`whoami`/Desktop
-    ;;
   *)
     echo "Invalid choice."
     exit 1
-    ;;
 esac
 
 dialog --backtitle "ISOfolder Setup" --title "ISOfolder" --msgbox "ISOfolder is successfully installed. You can open it on the app menu or on the desktop." 15 50
